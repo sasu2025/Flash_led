@@ -1,0 +1,39 @@
+EMULATION	Initial debug frequency set
+
+****************************************
+************* CORE INFO ****************
+**  (CORE INDEX:  0:CM7_0)
+**
+**  CPUID:        0x00000000
+**  PARTNO:       0x000
+**  VARIANT:      0x0
+**  REVISION:     0x0
+**
+**  Detected:     Cortex-M0 r0p0
+****************************************
+
+EMULATION	END - Without cleanup
+LOADING	C:\Users\P.Karuppannan\.jenkins\workspace\ci_cd_test\Debug_FLASH\led.elf
+EMULATION	Probe - System; Root
+EMULATION	Initial debug frequency set
+EMULATION	Asserting reset
+EMULATION	Finished connecting to SoC
+EMULATION	Releasing reset
+EMULATION	Initialization script (if any) done
+No RAM which needs initialization found
+EMULATION	Final debug frequency set
+EMULATION	SoC ID match OK
+EMULATION	STARTED
+PROGRAMMING 	22616 bytes
+PROGRAMMING	NXP S32K3xx_64kB_976kB (3 sectors)
+EMULATION	END - Without cleanup
+EMULATION	Initial debug frequency set
+EMULATION	Asserting reset
+EMULATION	Finished connecting to SoC
+EMULATION	Releasing reset
+EMULATION	Initialization script (if any) done
+No RAM which needs initialization found
+EMULATION	Final debug frequency set
+EMULATION	SoC ID match OK
+EMULATION	STARTED
+EMULATION	END - Executing cleanup
