@@ -1,0 +1,60 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Preparation') {
+            steps {
+               git changelog: false, credentialsId: 'eab25b37-4166-4aec-913a-c1084ae9b9db', poll: false, url: 'https://github.com/PrKa-cicd/CI_CD_Test.git'
+            }
+        }
+        stage('Build') {
+            steps {
+             bat '''cd %cd%\\Debug_FLASH
+                make all'''
+            }
+        }
+         stage('Flash') {
+            steps {
+                bat '''cd..
+                    cd %cd%\\CI_CD_Pipeline\\TargetFlash
+                    python TargetFlash.py'''
+            }
+        }
+    }
+}
+
+pipeline {
+    agent any
+    stages {
+        stage('Fetching Git Repository') {
+            steps {
+               git changelog: false, credentialsId: 'eab25b37-4166-4aec-913a-c1084ae9b9db', poll: false, url: 'https://github.com/PrKa-cicd/CI_CD_Test.git'
+            }
+        }
+        stage('Build') {
+            steps {
+             bat '''cd %cd%\\Debug_FLASH
+                make all'''
+            }
+        }
+         stage('Flash') {
+            steps {
+                bat '''cd..
+                    cd %cd%\\CI_CD_Pipeline\\TargetFlash
+                    python TargetFlash.py'''
+            }
+        }
+    }
+    
+	post {
+        success {
+            emailext body: "Build Passed ${env.BUILD_URL}", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: "Successful Build: ${currentBuild.fullDisplayName}"
+        }
+        failure {
+            emailext body: "Something is wrong with ${env.BUILD_URL}", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: "Failed Pipeline: ${currentBuild.fullDisplayName}" 
+        }
+    }
+  
+}
+
+
