@@ -5,8 +5,8 @@
 import isystem.connect as ic
 import os
  
-winidea_id = ''
-
+winidea_id = "C:\\iSYSTEM\\winIDEA9\\winIDEA.exe"
+winidea_id = "180999"
 
 
 def test_begin_program():
