@@ -10,11 +10,8 @@ winidea_id = "180999"
 
 
 def test_begin_program():
-     print("Attempting to connect to winIDEA...")
-    conn_mgr = ic.CConnectionMgr()
-    winidea_id = 180999  # Replace with your winIDEA instance ID if needed
+    conn_mgr = ic.ConnectionMgr()
     conn_mgr.connect(ic.CConnectionConfig().instanceId(winidea_id))
-    print("Connected to winIDEA!")
     sess_ctrl = ic.CSessionCtrl(conn_mgr)
     execCtrl = ic.CExecutionController(conn_mgr)
     wksCtrl = ic.CWorkspaceController(conn_mgr)
