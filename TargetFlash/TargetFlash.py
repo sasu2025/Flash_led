@@ -5,7 +5,7 @@
 import isystem.connect as ic
 import os
  
-winidea_id = "C:\\iSYSTEM\\winIDEA9\\winIDEA.exe"
+winidea_path = "C:\\iSYSTEM\\winIDEA9\\winIDEA.exe"
 winidea_id = "180999"
 
 
