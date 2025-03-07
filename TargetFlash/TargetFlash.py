@@ -11,7 +11,7 @@ winidea_id = "180999"
 
 def test_begin_program():
     conn_mgr = ic.ConnectionMgr()
-    conn_mgr.connect(ic.CConnectionConfig().start_existing())
+    conn_mgr.connect(ic.CConnectionConfig().instanceId(winidea_id))
     sess_ctrl = ic.CSessionCtrl(conn_mgr)
     execCtrl = ic.CExecutionController(conn_mgr)
     wksCtrl = ic.CWorkspaceController(conn_mgr)
