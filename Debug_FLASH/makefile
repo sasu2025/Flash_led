@@ -24,6 +24,14 @@ endif
 
 -include ../makefile.defs
 
+MCAL_PATH := C:/NXP/S32DS.3.5/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M30I0R0/include
+
+# Convert Windows backslashes to forward slashes
+MCAL_PATH_UNIX := $(subst \,/,$(MCAL_PATH))
+
+# Use the corrected path
+CFLAGS += -I$(MCAL_PATH_UNIX)
+
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_SIZE += \
 led.siz \
