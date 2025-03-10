@@ -31,7 +31,7 @@ def test_begin_program():
         return
     
     # CHANGED: Add delay to allow winIDEA to initialize.
-    //time.sleep(10)  # Adjust delay as necessary
+    # time.sleep(10)  # Adjust delay as necessary
     
     print("Opening original workspace...")
     wksCtrl.open(wksFilePath)
