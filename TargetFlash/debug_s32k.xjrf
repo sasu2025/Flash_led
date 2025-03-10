@@ -146,7 +146,7 @@
            <Area></Area>
            <Load>true</Load>
            <OverrideMemArea>false</OverrideMemArea>
-           <Path>C:\Users\P.Karuppannan\.jenkins\workspace\ci_cd_test\Debug_FLASH\led.elf</Path>
+           <Path>C:\tools\Jenkins\Data\workspace\First_Flash_pipeline\Debug_FLASH\led.elf</Path>
            <UseDefaultMSID>true</UseDefaultMSID>
            <MSID>
             <App>0x0</App>
@@ -242,7 +242,7 @@
            <Area></Area>
            <Load>true</Load>
            <OverrideMemArea>false</OverrideMemArea>
-           <Path>C:\Users\P.Karuppannan\.jenkins\workspace\ci_cd_test\Debug_FLASH\led.elf</Path>
+           <Path>C:\tools\Jenkins\Data\workspace\First_Flash_pipeline\Debug_FLASH\led.elf</Path>
            <UseDefaultMSID>true</UseDefaultMSID>
            <MSID>
             <App>0x0</App>
