@@ -16,12 +16,9 @@ def test_begin_program():
     execCtrl = ic.CExecutionController(conn_mgr)
     wksCtrl = ic.CWorkspaceController(conn_mgr)
     
-    cwd = os.getcwd()
-    print(cwd)
-    
-    #wksFilePath = 'C:\\CI_CD_Test\\TargetFlash\\debug_s32k.xjrf'
-    wksFilePath = cwd+'\\debug_s32k.xjrf'
-    print(wksFilePath)
+    # Changed: Using hardcoded absolute path for the workspace file (Option 1 change)
+    wksFilePath = "C:\\Workspace\\s32\\CI_CD_Test\\Debug_FLASH\\debug_s32k.xjrf"  
+    print("Using workspace file:", wksFilePath)
     
     print("Opening original workspace...")
     wksCtrl.open(wksFilePath)
