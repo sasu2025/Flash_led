@@ -9,10 +9,10 @@
 -DCPU_S32K311
 -DCPU_CORTEX_M7
 -I../RTD/include
--IC:/tools/NXP/S32DS.3.5/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M30I0R0/include
--IC:/Workspace/s32/CI_CD_Test/generate/include
--IC:/Workspace/s32/CI_CD_Test/RTD/include
--IC:/tools/NXP/S32DS.3.5/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M30I0R0/header
+-I C:/tools/NXP/S32DS.3.5/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M30I0R0/include
+-I C:/Workspace/s32/CI_CD_Test/generate/include
+-I C:/Workspace/s32/CI_CD_Test/RTD/include
+-I C:/tools/NXP/S32DS.3.5/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M30I0R0/header
 -I../RTD/include
 -I"/header/"
 -I"/include/"
