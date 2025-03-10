@@ -75,6 +75,8 @@ int main(void)
 #endif
 
 #if 1
+	Siul2_Dio_Ip_WritePin(GREEN_LED_PORT, GREEN_LED_PIN, 1U);
+        TestDelay(10000000);
     while (1)
     {
         Siul2_Dio_Ip_WritePin(GREEN_LED_PORT, GREEN_LED_PIN, 1U);
