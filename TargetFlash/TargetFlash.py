@@ -4,6 +4,7 @@
  
 import isystem.connect as ic
 import os
+import time
  
 winidea_path = "C:\\iSYSTEM\\winIDEA9\\winIDEA.exe"
 winidea_id = "180999"
