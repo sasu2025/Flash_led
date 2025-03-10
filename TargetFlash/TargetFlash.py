@@ -23,6 +23,14 @@ def test_begin_program():
     # Changed: Construct the workspace file path relative to the new working directory (Option 2 change)
     wksFilePath = os.getcwd() + '\\debug_s32k.xjrf'
     print("Using workspace file:", wksFilePath)
+
+    # CHANGED: Check if the workspace file exists.
+    if not os.path.exists(wksFilePath):
+        print("Error: Workspace file does not exist at:", wksFilePath)
+        return
+    
+    # CHANGED: Add delay to allow winIDEA to initialize.
+    time.sleep(10)  # Adjust delay as necessary
     
     print("Opening original workspace...")
     wksCtrl.open(wksFilePath)
