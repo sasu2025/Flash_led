@@ -80,9 +80,9 @@ int main(void)
     while (1)
     {
         Siul2_Dio_Ip_WritePin(GREEN_LED_PORT, GREEN_LED_PIN, 1U);
-        TestDelay(4800000);
+        TestDelay(9900000);
         Siul2_Dio_Ip_WritePin(GREEN_LED_PORT, GREEN_LED_PIN, 0U);
-        TestDelay(4800000);
+        TestDelay(9900000);
     }
 
     //Exit_Example(TRUE);
