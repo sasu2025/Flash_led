@@ -13,6 +13,7 @@
 -IC:/Workspace/s32/CI_CD_Test/generate/include
 -IC:/Workspace/s32/CI_CD_Test/RTD/include
 -IC:/NXP/S32DS.3.5/S32DS/software/PlatformSDK_S32K3/RTD/BaseNXP_TS_T40D34M30I0R0/header
+-I../RTD/include
 -I"/header/"
 -I"/include/"
 -I"/include/"
