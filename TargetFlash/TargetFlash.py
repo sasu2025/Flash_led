@@ -16,14 +16,14 @@ def test_begin_program():
     execCtrl = ic.CExecutionController(conn_mgr)
     wksCtrl = ic.CWorkspaceController(conn_mgr)
     
-    # Changed: Set the working directory to the correct folder (Option 2 change)
-    os.chdir("C:\\Workspace\\s32\\CI_CD_Test\\Debug_FLASH")
+    # CHANGED (Option 2): Set the working directory to the correct folder.
+    os.chdir("C:\\Workspace\\s32\\CI_CD_Test\\TargetFlash")
     print("New working directory:", os.getcwd())
     
-    # Changed: Construct the workspace file path relative to the new working directory (Option 2 change)
+    # CHANGED (Option 2): Build the workspace file path relative to the new working directory.
     wksFilePath = os.getcwd() + '\\debug_s32k.xjrf'
     print("Using workspace file:", wksFilePath)
-
+    
     # CHANGED: Check if the workspace file exists.
     if not os.path.exists(wksFilePath):
         print("Error: Workspace file does not exist at:", wksFilePath)
